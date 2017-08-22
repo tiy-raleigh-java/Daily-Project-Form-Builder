@@ -1,8 +1,6 @@
 // The Form Data
+// Write your code below this array
 let formData = [
-  // For demonstration purposes,
-  // the first form element has been added to the HTML file as a comment
-  // compare the input in the HTML file with the contents of this first object
   {
     "type": "text",
     "label": "First Name",
@@ -26,7 +24,7 @@ let formData = [
   },
   {
     "type": "text",
-    "label": "Current Website URL",
+    "label": "Current website url",
     "id": "user-website",
     "icon": "fa-globe",
     "options": []
@@ -68,7 +66,7 @@ let formData = [
   },
   {
     "type": "tel",
-    "label": "Mobile Number",
+    "label": "Mobil Number",
     "id": "user-mobile",
     "icon": "fa-mobile-phone",
     "options": []
@@ -82,19 +80,23 @@ let formData = [
   }
 ];
 
-// HINTS:
-// As you can see, we access the first element in the array
-// with [0] and then grab the property "label" using the "." operator
-( function(){
-  // Select the first element from the array
-  let first = formData[ 0 ];
-  // Log the first object
-  console.log( first );
-  // Log the string "First Name"
-  console.log( first.label );
-} )();
+// Hints -----------
+
+// Accessing specific properties.
+formData[0].label // this will give us "First Name"
+// as you can see we access the first element in the array
+// with [0] and then grab the property "label" using the "." character
+
+// Looping
+// Sample of how to loop over the formData
+for(let i=0; i<formData.length; i++){
+
+  // Check your dev tools console for what the items in formData have
+  console.log(formData[i])
+
+}
 
 
-// -------- Your Code Goes Below this Line --------
+// -------- Your Code Goes Here --------
 
 
